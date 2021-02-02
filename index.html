@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&family=Raleway&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/style.css">
+  <meta charset="utf-8">
+  <title>Tip Calculator</title>
+</head>
+
+<body>
+  <div class="main">
+    <div class="heading raleway">
+      <h1>Tip Calculator</h1>
+    </div>
+
+    <form class="billForm montserrat" action="index.html" method="post">
+      <input class="billInput billAmount" type="text" name="" placeholder="How much was the bill?">
+    </form>
+
+    <form class="billForm montserrat" action="index.html" method="post">
+      <input class="billInput group" type="text" name="" placeholder="How many people in your party?">
+    </form>
+
+    <select class="billInput radial montserrat" >
+      <option selected>How Much Would you like to Tip?</option>
+      <option value="30">30% - Excellent!</option>
+      <option value="20">20% - Very Good!</option>
+      <option value="15">15% - Good</option>
+      <option value="10">10% - Okay</option>
+    </select>
+
+    <button class="button calculate raleway" type="button" name="button">Calculate Tip</button>
+    <button class="button reset raleway" onClick="window.location.reload()" type="button" name="button">Reset</button>
+
+    <div class=" montserrat">
+      <p class="tipFinal"></p>
+
+    </div>
+
+  </div>
+
+  <script src="index.js" charset="utf-8"></script>
+
+</body>
+
+</html>
